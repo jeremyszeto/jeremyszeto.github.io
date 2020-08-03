@@ -1,1 +1,443 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jeremy Szeto</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="assets/favicon/code-solid.svg" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <div class="logo">
+							<span class="icon fa-gem"></span>
+						</div> -->
+						<div class="content">
+							<div class="inner">
+								<h1>Jeremy Szeto</h1>
+								<p>June 2022 Graduate<br />
+								Cal Poly SLO Computer Engineering</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#me">about me</a></li>
+								<li><a href="#projects">projects</a></li>
+								<li><a href="#resume">resume</a></li>
+								<!-- <li><a href="#notcode">Not Code</a></li> -->
+								<li><a href="#contact">links</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- about me -->
+							<article id="me">
+								<h2 class="major">about me</h2>
+								<span class="image main"><img src="images/mugshot.jpg" alt="" /></span>
+								<p>I'm currently a third year Computer Engineering major at California 
+									Polytechnic State University, San Luis Obispo. I am comfortable 
+									coding in C, Java, and Python, and I also have experience with the 
+									hardware description language SystemVerilog as well as ARM, ARM Thumb, 
+									and RISC-V assembly syntaxes.
+								</p>
+								<p>I am primarily interested in embedded systems development, 
+									programmable logic, and systems programming, but I am always open 
+									to growth opportunities and trying something new. You can see some 
+									of my favorite projects <a href="#projects">here</a> and on my 
+									<a href="#resume">resume</a>.
+								</p>
+								<p>When I'm away from the screen, you can find me writing music and playing 
+									my instruments, exploring somewhere out in nature, or learning new 
+									recipes!
+								</p>
+								<p>Please don't hesitate to <a href="#contact">contact me</a> if you 
+									have any questions or just want to reach out!
+								</p>
+							</article>
+
+						<!-- projects -->
+							<article id="projects">
+								<h2 class="major">projects</h2>
+								<p class="intro">This is some of the work that I am most proud of! Check it out below:</p>
+								<span class="image fit"><img src="images/otter.jpg" alt="images/otter.png" /></span>
+								<h2 class="projects">RISC-V Etch-A-Sketch</h2>
+								<p>For a <b>computer design</b> class, I modeled a <b>RISC-V 
+									microcontroller</b> using <b>SystemVerilog</b>. This process 
+									involved creating and testing individual modules (memory, 
+									registers, PC, ALU, decoder, FSM, etc.) via simulation before 
+									physically programming the architecture on a <b>Xilinx BASYS3 
+									FPGA development board</b>. I expanded the basic functionality 
+									of the microcontroller by programming an Etch-A-Sketch tool in 
+									<b>C</b>, implementing an <b>interrupt service routine</b> for 
+									the reset function and continuously polling for directional 
+									inputs via button presses. The Etch-A-Sketch also had options 
+									for erasing, changing the cursor speed, and changing the drawing 
+									color via switches, with visual feedback given via the onboard 
+									seven-segment display.
+								</p>
+								<span class="image fit"><img src="images/carl.jpg" alt="" /></span>
+								<h2 class="projects">Where's Wheezer</h2>
+								<p>For SBHacks VI, my team and I created an interactive version of 
+									Where's Waldo using <b>Google Maps Street View API</b>. Players 
+									navigated around a geofence where Waldo was randomly located by 
+									using the arrow keys, and would "win" the game when they 
+									approached a certain radius of Waldo's location. We wrote a 
+									<b>computer vision algorithm</b> to scale Waldo's size and position 
+									relative to the player's location and zoom level. You can play the 
+									game <a href="https://www.wheeze.pythonanywhere.com/search">here</a>: 
+									(unless we've run out of hosting credits...)<br />
+									Our game won <b>Best Entertainent Hack</b> and was a Grand Prize finalist.
+								</p>
+								<span class="image fit"><img src="images/rex.jpg" alt="" /></span>
+								<h2 class="projects">REX</h2>
+								<p>Rex was a project I worked on with my team at SLO Hacks 2020. One of the 
+									issues that many international students face is the high fee incurred 
+									by currency transactions from their native currency to USD. We used 
+									<b>Xpring's SDK</b> and <b>XRP's interledger API</b> to smoothly 
+									transition through the transaction process from a person's bank account 
+									into <b>XRP cryptocurrency</b>, then into their currency of choice. 
+									Rex allows users to bypass high curency exchange rates by using 
+									<b>blockchain</b> technology.
+								</p>
+								<span class="image fit"><img src="images/cshell.PNG" alt="" /></span>
+								<h2 class="projects">C Shell</h2>
+								<p>C Shell was the summative assignment for my Systems Programming class.
+									I programmed a basic <b>Unix shell</b> using <b>C89</b>, and 
+									implemented <b>pipelining</b> for up to 20 commands, with 
+									<b>fork-exec calls</b> and <b>file I/O</b> for each command. Every 
+									command could also take multiple <b>arguments</b> and <b>flags</b> 
+									using <b>dynamically allocated memory</b>. I also included some 
+									<b>shell built-in commands</b> (<code>cd, echo, exit, and pwd</code>).
+									<b>Errors</b> were <b>checked</b> and <b>exeptions</b> were 
+									<b>handled gracefully</b>.
+								</p>
+							</article>
+
+						<!-- resume -->
+							<article id="resume">
+								<h2 class="major">resume</h2>
+								<object data="assets/files/resume.pdf#toolbar=0&statusbar=0" type="application/pdf" class="resume">
+								</object>
+							</article>
+
+						<!-- not code -->
+						<article id="notcode">
+							<h2 class="major">not code</h2>
+							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+							<p>sit amet.</p>
+						</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">contact me / links</h2>
+								<p>Check out my stuff!</p>
+								<!-- <form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form> -->
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="mailto:jjszeto@calpoly.edu"><i class="fas fa-envelope"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/jeremyszeto"><i class="fab fa-linkedin"></i></a></li>
+									<li><a href="https://www.github.com/jeremyszeto"><i class="fab fa-github"></i></a></li>
+									<li><a href="https://www.devpost.com/jeremyszeto"><i class="fab fa-dev"></i></a></li>
+									
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Inspired by HTML5UP</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
